@@ -12,19 +12,23 @@ Ukiyo is a color theme for VS Code, VSCodium, Cursor and other VS Code-based edi
 | Ukiyo Yoru | Dark | `#161514` | Night variant with a darker, warmer background. |
 | Ukiyo Kami | Light | `#D2CCBC` | Paper variant at about 60% brightness. |
 
-![Ukiyo Umi palette preview](https://raw.githubusercontent.com/ukiyo-theme/palette/main/assets/umi.svg)
+![Ukiyo Umi palette preview](images/umi.png)
 
-![Ukiyo Yoru palette preview](https://raw.githubusercontent.com/ukiyo-theme/palette/main/assets/yoru.svg)
+![Ukiyo Yoru palette preview](images/yoru.png)
 
-![Ukiyo Kami palette preview](https://raw.githubusercontent.com/ukiyo-theme/palette/main/assets/kami.svg)
+![Ukiyo Kami palette preview](images/kami.png)
 
 Every text color meets a minimum WCAG contrast against the editor background. Comments are at least 4.5:1 and syntax colors at least 5:1.
 
 ## How to use
 
-### Install from source
+### Install the VSIX
 
-The extension isn't on the Marketplace or Open VSX yet. Clone the repository and build the VSIX package.
+Download the [Ukiyo VSIX](https://ukiyo-theme.github.io/palette/downloads/ukiyo.vsix). In VS Code, Cursor, or VSCodium, run **Extensions: Install from VSIX…** from the Command Palette and choose the downloaded file.
+
+### Build from source
+
+To build the package locally, clone the repository and run these commands.
 
 ```sh
 git clone https://github.com/ukiyo-theme/vscode ukiyo-vscode
@@ -32,7 +36,7 @@ cd ukiyo-vscode
 npx @vscode/vsce package
 ```
 
-Run **Extensions: Install from VSIX...** from the Command Palette and select the generated file. You can also install it from the terminal.
+Install the generated file from the Command Palette or from the terminal.
 
 ```sh
 code --install-extension ukiyo-*.vsix
