@@ -1,27 +1,27 @@
 {
-  "name": "ukiyo",
-  "displayName": "Ukiyo",
+  "name": "karazuri",
+  "displayName": "karazuri",
   "description": "A readable color theme with dark, darker and mid-light variants, based on Kanagawa",
   "version": "0.1.0",
-  "publisher": "ukiyo-theme",
+  "publisher": "karazuri",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ukiyo-theme/vscode"
+    "url": "https://github.com/karazuri/vscode"
   },
   "bugs": {
-    "url": "https://github.com/ukiyo-theme/vscode/issues"
+    "url": "https://github.com/karazuri/vscode/issues"
   },
   "engines": {
     "vscode": "^1.80.0"
   },
   "categories": ["Themes"],
-  "keywords": ["theme", "color-theme", "dark", "light", "kanagawa", "ukiyo"],
+  "keywords": ["theme", "color-theme", "dark", "light", "kanagawa", "karazuri"],
   "contributes": {
     "themes": [
-      { "label": "Ukiyo Umi", "uiTheme": "vs-dark", "path": "./themes/ukiyo-umi-color-theme.json" },
-      { "label": "Ukiyo Yoru", "uiTheme": "vs-dark", "path": "./themes/ukiyo-yoru-color-theme.json" },
-      { "label": "Ukiyo Kami", "uiTheme": "vs", "path": "./themes/ukiyo-kami-color-theme.json" }
+      { "label": "karazuri Umi", "uiTheme": "vs-dark", "path": "./themes/karazuri-umi-color-theme.json" },
+      { "label": "karazuri Yoru", "uiTheme": "vs-dark", "path": "./themes/karazuri-yoru-color-theme.json" },
+      { "label": "karazuri Kami", "uiTheme": "vs", "path": "./themes/karazuri-kami-color-theme.json" }
     ]
   }
 }

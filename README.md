@@ -1,22 +1,22 @@
-# Ukiyo for VS Code
+# karazuri for VS Code
 
-Ukiyo is a color theme for VS Code, VSCodium, Cursor and other VS Code-based editors.
+karazuri is a color theme for VS Code, VSCodium, Cursor and other VS Code-based editors.
 
-[View the palette](https://ukiyo-theme.github.io/palette/)
+[View the palette](https://karazuri.github.io/palette/)
 
 ## Variants
 
 | Theme label | Appearance | Background | Description |
 |---|---|---|---|
-| Ukiyo Umi | Dark | `#1A1A22` | Sea variant with a cool background. |
-| Ukiyo Yoru | Dark | `#161514` | Night variant with a darker, warmer background. |
-| Ukiyo Kami | Light | `#D2CCBC` | Paper variant at about 60% brightness. |
+| karazuri Umi | Dark | `#1A1A22` | Sea variant with a cool background. |
+| karazuri Yoru | Dark | `#161514` | Night variant with a darker, warmer background. |
+| karazuri Kami | Light | `#D2CCBC` | Paper variant at about 60% brightness. |
 
-![Ukiyo Umi palette preview](images/umi.png)
+![karazuri Umi palette preview](images/umi.png)
 
-![Ukiyo Yoru palette preview](images/yoru.png)
+![karazuri Yoru palette preview](images/yoru.png)
 
-![Ukiyo Kami palette preview](images/kami.png)
+![karazuri Kami palette preview](images/kami.png)
 
 Every text color meets a minimum WCAG contrast against the editor background. Comments are at least 4.5:1 and syntax colors at least 5:1.
 
@@ -24,39 +24,39 @@ Every text color meets a minimum WCAG contrast against the editor background. Co
 
 ### Install the VSIX
 
-Download the [Ukiyo VSIX](https://ukiyo-theme.github.io/palette/downloads/ukiyo.vsix). In VS Code, Cursor, or VSCodium, run **Extensions: Install from VSIX…** from the Command Palette and choose the downloaded file.
+Download the [karazuri VSIX](https://karazuri.github.io/palette/downloads/karazuri.vsix). In VS Code, Cursor, or VSCodium, run **Extensions: Install from VSIX…** from the Command Palette and choose the downloaded file.
 
 ### Build from source
 
 To build the package locally, clone the repository and run these commands.
 
 ```sh
-git clone https://github.com/ukiyo-theme/vscode ukiyo-vscode
-cd ukiyo-vscode
+git clone https://github.com/karazuri/vscode karazuri-vscode
+cd karazuri-vscode
 npx @vscode/vsce package
 ```
 
 Install the generated file from the Command Palette or from the terminal.
 
 ```sh
-code --install-extension ukiyo-*.vsix
+code --install-extension karazuri-*.vsix
 ```
 
 You can also copy or symlink the cloned folder into `~/.vscode/extensions` and restart VS Code. Cursor and VSCodium use their own extensions folders and CLI commands.
 
 ### Select a theme
 
-Run **Preferences: Color Theme** from the Command Palette and choose **Ukiyo Umi**, **Ukiyo Yoru**, or **Ukiyo Kami**.
+Run **Preferences: Color Theme** from the Command Palette and choose **karazuri Umi**, **karazuri Yoru**, or **karazuri Kami**.
 
 ### Follow the system color scheme
 
-Add these settings to your user `settings.json` to use Ukiyo Umi in dark mode and Ukiyo Kami in light mode. Use `"Ukiyo Yoru"` as the preferred dark theme if you prefer its warmer background.
+Add these settings to your user `settings.json` to use karazuri Umi in dark mode and karazuri Kami in light mode. Use `"karazuri Yoru"` as the preferred dark theme if you prefer its warmer background.
 
 ```json
 {
   "window.autoDetectColorScheme": true,
-  "workbench.preferredDarkColorTheme": "Ukiyo Umi",
-  "workbench.preferredLightColorTheme": "Ukiyo Kami"
+  "workbench.preferredDarkColorTheme": "karazuri Umi",
+  "workbench.preferredLightColorTheme": "karazuri Kami"
 }
 ```
 
@@ -67,12 +67,12 @@ Use `workbench.colorCustomizations` for interface colors and `editor.tokenColorC
 ```json
 {
   "workbench.colorCustomizations": {
-    "[Ukiyo Umi]": {
+    "[karazuri Umi]": {
       "sideBar.background": "#20202A"
     }
   },
   "editor.tokenColorCustomizations": {
-    "[Ukiyo Umi]": {
+    "[karazuri Umi]": {
       "comments": "#9297A8"
     }
   }
@@ -81,7 +81,7 @@ Use `workbench.colorCustomizations` for interface colors and `editor.tokenColorC
 
 ## Regenerate the theme files
 
-The files in `themes/` are generated from `palette.json` in [ukiyo-theme/palette](https://github.com/ukiyo-theme/palette). Make shared color changes in the palette and regenerate the files. With both repositories cloned side by side as `vscode` and `palette`, run this command from the VS Code repository.
+The files in `themes/` are generated from `palette.json` in [karazuri/palette](https://github.com/karazuri/palette). Make shared color changes in the palette and regenerate the files. With both repositories cloned side by side as `vscode` and `palette`, run this command from the VS Code repository.
 
 ```sh
 python3 ../palette/scripts/build.py vscode --out .
